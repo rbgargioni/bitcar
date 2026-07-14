@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biticar - Oficina Mecânica e Funilaria</title>
+    <!-- Google Fonts & FontAwesome para Ícones -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CABEÇALHO / NAVBAR -->
+    <header class="header">
+        <div class="container navbar">
+            <div class="logo">
+                <span class="brand-text">BITI<span class="highlight">CAR</span></span>
+                <i class="fa-solid fa-wrench logo-icon"></i>
+            </div>
+            <nav class="nav-menu">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#sobre">Quem Somos</a>
+                <a href="#novidades">Novidades</a>
+                <a href="#contato" class="btn-nav">Fazer Orçamento</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h1>O SEU CARRO EM BOAS MÃOS, BEM PERTINHO DE VOCÊ!</h1>
+            <p>Mecânica completa, diagnóstico de precisão e serviços de funilaria e pintura com quem você confia.</p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5551994190081" target="_blank" class="btn btn-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Chamar no WhatsApp
+                </a>
+                <a href="#servicos" class="btn btn-secondary">Nossos Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-car-battery"></i></div>
+                    <h3>Diagnóstico e Injeção</h3>
+                    <p>Tecnologia avançada para identificar o problema exato de injeção e elétrica do seu carro.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                    <h3>Mecânica Geral</h3>
+                    <p>Manutenção completa de motor, câmbio, embreagem, freios e suspensão com peças de alta qualidade.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-paint-roller"></i></div>
+                    <h3>Funilaria e Pintura</h3>
+                    <p>Reparo de batidas, riscos e amassados. Devolvemos a estética original e o brilho do seu veículo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE O RODRIGO -->
+    <section id="sobre" class="about">
+        <div class="container about-wrapper">
+            <div class="about-text">
+                <h2>Conheça o Rodrigo</h2>
+                <p>Na <strong>Biticar</strong>, prezamos pelo atendimento transparente, ágil e pela honestidade em cada orçamento. O Rodrigo acompanha pessoalmente cada veículo que entra na nossa oficina, garantindo que você entenda exatamente o que precisa ser feito.</p>
+                <div class="features">
+                    <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Diagnósticos Precisos</div>
+                    <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Orçamento Transparente</div>
+                    <div class="feature-item"><i class="fa-solid fa-circle-check"></i> Serviço de Bairro Qualificado</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÁREA DE POSTAGENS / NOVIDADES -->
+    <section id="novidades" class="blog">
+        <div class="container">
+            <div class="blog-header">
+                <h2 class="section-title">Novidades da Oficina</h2>
+                <!-- Botão restrito para o Rodrigo publicar -->
+                <button id="btn-admin-post" class="btn btn-admin"><i class="fa-solid fa-plus"></i> Nova Postagem</button>
+            </div>
+            
+            <!-- Feed de postagens -->
+            <div id="posts-container" class="posts-grid">
+                <!-- Posts vão aparecer aqui via Javascript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO / LOCALIZAÇÃO -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title">Onde Estamos</h2>
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h3>Biticar Oficinas</h3>
+                    <p><i class="fa-solid fa-location-dot"></i> Rua Waldemar Gonçalves Pires, 40 — Bairro Cristal</p>
+                    <p><i class="fa-solid fa-phone"></i> (51) 99419-0081</p>
+                    <p><i class="fa-solid fa-clock"></i> Seg. a Sex. das 8h às 18h | Sáb. das 8h às 12h</p>
+                    <a href="https://wa.me/5551994190081" target="_blank" class="btn btn-primary btn-large">
+                        <i class="fa-brands fa-whatsapp"></i> Solicitar Orçamento Grátis
+                    </a>
+                </div>
+                <div class="map-placeholder">
+                    <!-- Mapa simulado ou Google Maps incorporado -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.4182963056084!2d-51.2464166!3d-30.0822602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951978eb32c91839%3A0xc3c6f8510c44365b!2sR.%20Waldemar%20Gon%C3%A7alves%20Pires%2C%2040%20-%20Cristal%2C%20Porto%20Alegre%20-%20RS!5e0!3m2!1spt-BR!2sbr!4v1713000000000!5m2!1spt-BR!2sbr" width="100%" height="300" style="border:0; border-radius:10px;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODAL DE POSTAGEM (RODRIGO) -->
+    <div id="post-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Nova Postagem da Biticar</h3>
+            <form id="post-form">
+                <div class="form-group">
+                    <label for="post-title">Título do Serviço / Novidade</label>
+                    <input type="text" id="post-title" required placeholder="Ex: Reforma de suspensão completa do Civic">
+                </div>
+                <div class="form-group">
+                    <label for="post-content">Descrição do que foi feito</label>
+                    <textarea id="post-content" rows="4" required placeholder="Explique um pouco sobre o diagnóstico ou o resultado do serviço..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="post-image">Link de uma imagem (opcional)</label>
+                    <input type="url" id="post-image" placeholder="https://exemplo.com/foto-do-carro.jpg">
+                </div>
+                <button type="submit" class="btn btn-primary">Publicar no Site</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <p>&copy; 2026 Biticar Oficinas. Todos os direitos reservados. Design Profissional.</p>
+    </footer>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <a href="https://wa.me/5551994190081" target="_blank" class="whatsapp-float">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
